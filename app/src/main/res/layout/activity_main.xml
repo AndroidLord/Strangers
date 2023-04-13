@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg_blur"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                android:padding="2dp"
+                android:background="@drawable/gray_bg"
+                >
+
+                <TextView
+                    android:id="@+id/totalCoinsTextView_Main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="You Have: .."
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:paddingStart="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_coin"/>
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="22dp"
+                android:padding="3dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/gray_bg"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_treasure"/>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                app:lottie_rawRes="@raw/radar"
+
+                android:layout_marginStart="50dp"
+                app:lottie_speed="1.2"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"/>
+
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/profileImage_Main"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:civ_border_width="2dp"
+                android:layout_marginTop="90dp"
+                android:layout_marginStart="139dp"
+                android:src="@drawable/demo_user"
+                android:scaleType="centerCrop"
+                />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Talk With Random People, Have Fun! \nClick 'Find' and Talk with Them"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:padding="2dp"
+            android:background="@drawable/gray_bg"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Coins: 5"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:paddingStart="5dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_coin"/>
+
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/findButton_Main"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#4CAF50"
+            android:text="Find"
+            app:cornerRadius="20dp"
+            android:layout_marginTop="2dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
